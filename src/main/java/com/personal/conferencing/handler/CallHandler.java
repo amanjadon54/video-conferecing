@@ -13,6 +13,7 @@ import org.kurento.jsonrpc.JsonUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.TextMessage;
 import org.springframework.web.socket.WebSocketSession;
@@ -21,6 +22,7 @@ import org.springframework.web.socket.handler.TextWebSocketHandler;
 import java.io.IOException;
 import java.util.concurrent.ConcurrentHashMap;
 
+@Component
 public class CallHandler extends TextWebSocketHandler {
 
     @Autowired
@@ -104,7 +106,7 @@ public class CallHandler extends TextWebSocketHandler {
         }
 
         JsonObject response = new JsonObject();
-        response.addProperty("id", "resgisterResponse");
+        response.addProperty("id", "registerResponse");
         response.addProperty("response", responseMsg);
         caller.sendMessage(response);
     }
