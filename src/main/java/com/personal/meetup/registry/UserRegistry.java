@@ -1,6 +1,6 @@
-package com.personal.conferencing.registry;
+package com.personal.meetup.registry;
 
-import com.personal.conferencing.model.UserSession;
+import com.personal.meetup.model.UserSession;
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.WebSocketSession;
 

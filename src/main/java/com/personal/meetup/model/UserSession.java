@@ -1,7 +1,6 @@
-package com.personal.conferencing.model;
+package com.personal.meetup.model;
 
 import com.google.gson.JsonObject;
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.kurento.client.IceCandidate;

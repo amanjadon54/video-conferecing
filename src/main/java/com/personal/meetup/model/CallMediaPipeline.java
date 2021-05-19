@@ -1,4 +1,4 @@
-package com.personal.conferencing.model;
+package com.personal.meetup.model;
 
 import lombok.Getter;
 import org.kurento.client.KurentoClient;

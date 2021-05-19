@@ -1,10 +1,10 @@
-package com.personal.conferencing.handler;
+package com.personal.meetup.handler;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
-import com.personal.conferencing.model.CallMediaPipeline;
-import com.personal.conferencing.model.UserSession;
-import com.personal.conferencing.registry.UserRegistry;
+import com.personal.meetup.model.CallMediaPipeline;
+import com.personal.meetup.model.UserSession;
+import com.personal.meetup.registry.UserRegistry;
 import org.kurento.client.EventListener;
 import org.kurento.client.IceCandidate;
 import org.kurento.client.IceCandidateFoundEvent;

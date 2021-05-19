@@ -1,6 +1,6 @@
-package com.personal.conferencing;
+package com.personal.meetup;
 
-import com.personal.conferencing.handler.CallHandler;
+import com.personal.meetup.handler.CallHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,7 +10,7 @@ import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry
 
 @SpringBootApplication
 @EnableWebSocket
-public class ConferencingApp implements WebSocketConfigurer {
+public class MeetupApp implements WebSocketConfigurer {
 
     @Autowired
     private CallHandler callHandler;
@@ -21,6 +21,6 @@ public class ConferencingApp implements WebSocketConfigurer {
     }
 
     public static void main(String[] s) {
-        SpringApplication.run(ConferencingApp.class);
+        SpringApplication.run(MeetupApp.class);
     }
 }

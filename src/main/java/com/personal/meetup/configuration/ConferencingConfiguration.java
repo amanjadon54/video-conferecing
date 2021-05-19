@@ -1,4 +1,4 @@
-package com.personal.conferencing.configuration;
+package com.personal.meetup.configuration;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

@@ -1,4 +1,4 @@
-# video-conferencing
+# meetup
  is a live video-based meeting between two or more people in different locations using video-enabled devices. Video conferencing allows multiple people to meet and collaborate face to face long distance by transmitting audio, video, text and presentations in real time through the internet.
 ## Installation:
 
@@ -21,7 +21,7 @@ Run this project
 ```
 mvn -U clean spring-boot:run -Dspring-boot.run.jvmArguments="-Dkms.url=ws://{KMS_HOST}:8888/kurento"
 ```
-We can ignore passing the kms.url if the server and appliaction running on the same machine. In other cases, just provide the host and port of the WebRTC server.
+We can ignore passing the kms.url if the server and application running on the same machine. In other cases, just provide the host and port of the WebRTC server.
 
 ## Development
 Want to contribute? Great! Feel free to raise PR.
