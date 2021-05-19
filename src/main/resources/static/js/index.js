@@ -79,10 +79,10 @@ function setCallState(nextState) {
 window.onload = function() {
 	console = new Console();
 	setRegisterState(NOT_REGISTERED);
-	var drag = new Draggabilly(document.getElementById('videoSmall'));
 	videoInput = document.getElementById('videoInput');
 	videoOutput = document.getElementById('videoOutput');
 	document.getElementById('name').focus();
+	var drag = new Draggabilly(document.getElementById('videoSmall'));
 }
 
 window.onbeforeunload = function() {
@@ -301,14 +301,14 @@ function sendMessage(message) {
 	ws.send(jsonMessage);
 }
 
-function showSpinner() {
+function showSpinner(arguments) {
 	for (var i = 0; i < arguments.length; i++) {
 		arguments[i].poster = './img/transparent-1px.png';
 		arguments[i].style.background = 'center transparent url("./img/spinner.gif") no-repeat';
 	}
 }
 
-function hideSpinner() {
+function hideSpinner(arguments) {
 	for (var i = 0; i < arguments.length; i++) {
 		arguments[i].src = '';
 		arguments[i].poster = './img/webrtc.png';
